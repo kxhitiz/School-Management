@@ -7,8 +7,15 @@
   <%= @attendance.student_roll%>
 </p>
 <p>
-  <b>Attendance Status:</b>
+  <b>Student's Presence:</b>
   <%= @attendance.present%>
 </p>
-
+<p>
+  <b>Year:</b>
+  <%= @attendance.year%>
+  <b>Month:</b>
+  <%= @attendance.month%>
+  <b>Day:</b>
+  <%= @attendance.day%>
+</p>
 <%= link_to 'Go Back', attendances_path %>

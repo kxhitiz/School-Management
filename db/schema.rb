@@ -10,15 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110321092321) do
+ActiveRecord::Schema.define(:version => 20110321170852) do
 
   create_table "attendances", :force => true do |t|
     t.string   "student_name"
     t.integer  "student_roll"
     t.boolean  "present"
-    t.date     "year"
-    t.date     "month"
-    t.date     "day"
+    t.integer  "year"
+    t.integer  "month"
+    t.integer  "day"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

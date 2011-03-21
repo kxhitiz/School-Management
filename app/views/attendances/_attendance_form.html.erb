@@ -26,13 +26,13 @@
   <div class="field">
     <br />
     <%= f.label :year %>
-    <%= f.text_field :year, :value => Time.now.year, :size => 5 %>
+    <%= f.text_field :year, :value => Time.now.year.to_i, :size => 5 %>
 
     <%= f.label :month %>
-    <%= f.text_field :month, :value => Time.now.month, :size => 5 %>
+    <%= f.text_field :month, :value => Time.now.month.to_i, :size => 5 %>
 
     <%= f.label :day %>
-    <%= f.text_field :day, :value => Time.now.day, :size => 5 %>
+    <%= f.text_field :day, :value => Time.now.day.to_i, :size => 5 %>
   </div>
   <br />
   <div class="actions">
