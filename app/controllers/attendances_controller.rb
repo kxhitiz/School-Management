@@ -51,7 +51,6 @@ class AttendancesController < ApplicationController
      @attendance = Attendance.find(params[:id])
        respond_to do |format|
               format.html
-            end
+       end
    end
-
 end

@@ -3,6 +3,18 @@ header h1{
     color: #0C50A8;
 }
 
+.main_header h1 a {
+    text-decoration: none;
+    color: #0C50A8;
+    text-align: right;
+    padding-left: 50px;
+}
+
+.main_header h1 a:hover {
+ text-decoration: underline;
+ color: #6B0522;
+}
+
 #index_section {
     margin: auto;
     border: 1px solid #000000;
@@ -70,6 +82,16 @@ header h1{
 .list_table tbody tr:hover td
 {
     color: #009;
+}
+
+#error_explanation {
+    background: #A80735;
+
+}
+
+#error_explanation li {
+   list-style-type:upper-roman;
+ padding-top: 5px;
 }
 
 #student_container {

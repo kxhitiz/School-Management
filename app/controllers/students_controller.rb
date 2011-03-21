@@ -1,5 +1,4 @@
 class StudentsController < ApplicationController
-
   def index
     @students = Student.all
     respond_to do |format|
@@ -33,7 +32,7 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
     respond_to do |format|
       if @student.update_attributes(params[:student])
-        format.html { redirect_to(@student, :notice => 'student was successfully updated.') }
+        format.html { redirect_to(@student, :notice => 'Student was successfully updated.') }
       else
         format.html { render :action => "edit" }
       end
@@ -43,16 +42,15 @@ class StudentsController < ApplicationController
   def destroy
     @student = Student.find(params[:id])
     @student.destroy
-    respond_to do |format|
-      format.html { redirect_to(student_url) }
-    end
+    # respond_to do |format|
+    #      format.html { redirect_to(student_url) }
+   # end
   end
 
   def show
      @student = Student.find(params[:id])
-       respond_to do |format|
-              format.html
-            end
+     respond_to do |format|
+       format.html
+     end
    end
-
 end
