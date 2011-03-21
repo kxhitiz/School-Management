@@ -1,22 +1,24 @@
-<h1>Attendance Record!</h1>
-<table>
-  <tr>
-    <th>Student Name</th>
-    <th>Student Roll</th>
-    <th>Status</th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="attendance_container">
+  <h1>Attendance Record!</h1>
+  <table class="list_table">
+    <tr>
+      <th>Student Name</th>
+      <th>Student Roll</th>
+      <th>Status</th>
+      <th></th>
+      <th></th>
+    </tr>
 
-<% @attendances.each do |attendance| %>
-  <tr>
-    <td><%= attendance.student_name %></td>
-    <td><%= attendance.student_roll %></td>
-    <td><%= attendance.present %></td>
-    <td><%= link_to 'Show', attendance %></td>
-    <td><%= link_to 'Edit', edit_attendance_path(attendance) %></td>
-    <td><%= link_to 'Destroy', attendance, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-<%= link_to 'Add Attendance', new_attendance_path %>
+    <% @attendances.each do |attendance| %>
+    <tr>
+      <td><%= attendance.student_name %></td>
+      <td><%= attendance.student_roll %></td>
+      <td><%= attendance.present %></td>
+      <td><%= link_to 'Show', attendance %></td>
+      <td><%= link_to 'Edit', edit_attendance_path(attendance) %></td>
+      <td><%= link_to 'Destroy', attendance, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+    <% end %>
+  </table>
+  <%= link_to 'Add Attendance', new_attendance_path %>
+</div>

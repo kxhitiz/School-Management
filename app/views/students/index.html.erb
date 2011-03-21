@@ -1,22 +1,24 @@
-<h1>Student!</h1>
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Roll</th>
-    <th>Address</th>
-    <th>Phone Number</th>
-  </tr>
+<div id="student_container">
+  <h1>Student Records!</h1>
+  <table class="list_table">
+    <tr>
+      <th>Name</th>
+      <th>Roll</th>
+      <th>Address</th>
+      <th>Phone Number</th>
+    </tr>
 
-<% @students.each do |student| %>
-  <tr>
-    <td><%= student.name %></td>
-    <td><%= student.roll %></td>
-    <td><%= student.address %></td>
-    <td><%= student.phone %></td>
-    <td><%= link_to 'Show', student %></td>
-    <td><%= link_to 'Edit', edit_student_path(student) %></td>
-    <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-<%= link_to 'Add Student', new_student_path %>
+    <% @students.each do |student| %>
+    <tr>
+      <td><%= student.name %></td>
+      <td><%= student.roll %></td>
+      <td><%= student.address %></td>
+      <td><%= student.phone %></td>
+      <td><%= link_to 'Show', student %></td>
+      <td><%= link_to 'Edit', edit_student_path(student) %></td>
+      <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+    <% end %>
+  </table>
+  <%= link_to 'Add Student', new_student_path %>
+</div>
