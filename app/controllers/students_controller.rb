@@ -41,10 +41,7 @@ class StudentsController < ApplicationController
 
   def destroy
     @student = Student.find(params[:id])
-    @student.destroy
-    # respond_to do |format|
-    #      format.html { redirect_to(student_url) }
-   # end
+    @student.destroy   
   end
 
   def show

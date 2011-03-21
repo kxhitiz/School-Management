@@ -42,9 +42,6 @@ class AttendancesController < ApplicationController
   def destroy
     @attendance = Attendance.find(params[:id])
     @attendance.destroy
-    respond_to do |format|
-      format.html { redirect_to(Attendance_url) }
-    end
   end
 
   def show

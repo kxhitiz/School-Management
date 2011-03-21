@@ -11,8 +11,8 @@ header h1{
 }
 
 .main_header h1 a:hover {
- text-decoration: underline;
- color: #6B0522;
+    text-decoration: underline;
+    color: #6B0522;
 }
 
 #index_section {
@@ -38,6 +38,7 @@ header h1{
     border: 1px solid #000000;
     text-align: center;
     width: 630px;
+    box-shadow: 5px 10px 5px rgba(0,0,0,.4);
 }
 
 .main_section a {
@@ -90,8 +91,8 @@ header h1{
 }
 
 #error_explanation li {
-   list-style-type:upper-roman;
- padding-top: 5px;
+    list-style-type:none;
+    padding-top: 5px;
 }
 
 #student_container {

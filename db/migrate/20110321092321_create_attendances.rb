@@ -4,9 +4,9 @@ class CreateAttendances < ActiveRecord::Migration
       t.string :student_name
       t.integer :student_roll
       t.boolean :present
-      t.date :year
-      t.date :month
-      t.date :day
+      t.integer :year
+      t.integer :month
+      t.integer :day
 
       t.timestamps
     end
