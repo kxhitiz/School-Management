@@ -1,0 +1,43 @@
+<%= form_for(@attendance) do |f| %>
+  <% if @attendance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@attendance.errors.count, "error") %> prohibited this attendance from being saved:</h2>
+
+      <ul>
+      <% @attendance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :student_name %><br />
+    <%= f.text_field :student_name %>
+  </div>
+  <div class="field">
+    <%= f.label :student_roll %><br />
+    <%= f.text_field :student_roll %>
+  </div>
+  <div class="field">
+    <%= f.label :present %><br />
+    <%= f.text_field :present %>
+  </div>
+
+  <div class="field">
+    <br />
+    <%= f.label :year %>
+    <%= f.text_field :year, :value => Time.now.year, :size => 5 %>
+
+    <%= f.label :month %>
+    <%= f.text_field :month, :value => Time.now.month, :size => 5 %>
+
+
+    <%= f.label :day %>
+    <%= f.text_field :day, :value => Time.now.day, :size => 5 %>
+  </div>
+  <br />
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  student_name: MyString
+  student_roll: 1
+  present: false
+  year: 2011-03-21
+  month: 2011-03-21
+  day: 2011-03-21
+
+two:
+  student_name: MyString
+  student_roll: 1
+  present: false
+  year: 2011-03-21
+  month: 2011-03-21
+  day: 2011-03-21
